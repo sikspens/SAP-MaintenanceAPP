@@ -1,0 +1,19 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.connectedGoods.controller.IceCreamMaker" xmlns="sap.m">
+    <Page showHeader="true" title="Ice Cream Maker" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <content/>
+        <footer>
+            <Bar design="Footer">
+                <contentLeft/>
+                <contentMiddle/>
+                <contentRight>
+                    <Button text="Approve" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                    <Button text="Reject" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress1"/>
+                    <Button text="" type="Default" icon="sap-icon://action" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </contentRight>
+            </Bar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

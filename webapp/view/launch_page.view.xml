@@ -1,0 +1,54 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.connectedGoods.controller.launch_page" xmlns="sap.m">
+    <Page showHeader="true" title="Maintenance APP" showFooter="true" showNavButton="false">
+        <content>
+            <HBox alignItems="Center" direction="Row" fitContainer="false" width="1280px" height="289px" justifyContent="Center" renderType="Div" visible="true" displayInline="false">
+                <items>
+                    <GenericTile header="Ice Cream Maker" subheader="Sub Header" frameType="TwoByOne" press="_onGenericTilePress">
+                        <tileContent>
+                            <TileContent footer="Notification" unit="C">
+                                <content>
+                                    <NumericContent value="A" valueColor="Good" indicator="None" icon="sap-icon://temperature"/>
+                                </content>
+                            </TileContent>
+                        </tileContent>
+                    </GenericTile>
+                    <GenericTile header="Food Processor" subheader="Check list" frameType="TwoByOne" press="_onGenericTilePress1">
+                        <tileContent>
+                            <TileContent footer="Notification" unit="">
+                                <content>
+                                    <NumericContent value="B" valueColor="Good" indicator="None" icon="sap-icon://add-equipment"/>
+                                </content>
+                            </TileContent>
+                        </tileContent>
+                    </GenericTile>
+                </items>
+                <layoutData/>
+            </HBox>
+            <HBox alignItems="Stretch" direction="Row" fitContainer="true" width="1280px" height="289.15625px" justifyContent="SpaceAround" renderType="Div" visible="true" displayInline="false">
+                <items>
+                    <StandardTile title="Documnets &amp; Info" number="1" numberUnit="Notification" info="Read this" infoState="Warning" icon="sap-icon://lightbulb" press="_onStandardTilePress"/>
+                </items>
+                <layoutData/>
+            </HBox>
+            <HBox alignItems="Stretch" direction="Row" fitContainer="true" width="1280px" height="289.15625px" justifyContent="SpaceAround" renderType="Div" visible="true" displayInline="false">
+                <items>
+                    <StandardTile title="Cooler, 2 Doors" number="2" numberUnit="Notification" info="Needs Attention" infoState="Error" icon="/webapp/resources/cooler.png" press="_onStandardTilePress1"/>
+                    <StandardTile title="Coffee Machine" number="3" numberUnit="Notification" info="Needs Attention" infoState="Error" icon="/webapp/resources/CoffeeMachine.png" press="_onStandardTilePress2"/>
+                </items>
+                <layoutData/>
+            </HBox>
+        </content>
+        <footer>
+            <Bar design="Auto">
+                <contentLeft/>
+                <contentMiddle/>
+                <contentRight>
+                    <Button text="exit" type="Emphasized" icon="sap-icon://action" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                </contentRight>
+            </Bar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

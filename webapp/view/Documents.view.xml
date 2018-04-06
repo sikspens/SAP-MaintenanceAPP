@@ -1,0 +1,108 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.connectedGoods.controller.Documents" xmlns:uxap="sap.uxap" xmlns="sap.m" xmlns:tnt="sap.tnt">
+    <uxap:ObjectPageLayout showTitleInHeaderContent="false" showHeaderContent="true" showAnchorBar="true" showFooter="true" subSectionLayout="TitleOnLeft">
+        <uxap:headerContent>
+            <VBox alignItems="Stretch" direction="Column" fitContainer="false" width="165.00000000px" height="78px" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+                <items>
+                    <Link text="+33 6 1555 5353" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
+                    <Link text="test@sap.com" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
+                </items>
+                <layoutData/>
+            </VBox>
+            <Button text="PRESS" type="Unstyled" icon="sap-icon://visits" iconFirst="true" width="200px" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+            <Label text="Hello and Welcome!" design="Bold" width="20%" required="false" textAlign="Center" textDirection="LTR"/>
+        </uxap:headerContent>
+        <uxap:headerTitle>
+            <uxap:ObjectPageHeader objectImageURI="/webapp/resources/official-service.jpg" objectTitle="TAG IMG" objectSubtitle="Subtitle" headerDesign="Light" objectImageShape="Circle" isObjectIconAlwaysVisible="true" isObjectTitleAlwaysVisible="true" isObjectSubtitleAlwaysVisible="false" isActionAreaAlwaysVisible="true">
+                <uxap:actions>
+                    <Button text="Save" type="Up" icon="sap-icon://save" iconFirst="false" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress1"/>
+                    <Image src="/webapp/resources/green.png" height="auto" width="50px" densityAware="false"/>
+                </uxap:actions>
+                <uxap:breadCrumbsLinks/>
+                <uxap:navigationBar>
+                    <Bar design="Auto">
+                        <contentLeft>
+                            <Bar design="Auto">
+                                <contentLeft>
+                                    <tnt:NavigationList width="150px" expanded="true" itemSelect="_onNavigationListItemSelect">
+                                        <tnt:items>
+                                            <tnt:NavigationListItem icon="sap-icon://home" expanded="false" hasExpander="true" text="Home" select="_onNavigationListItemSelect1">
+                                                <tnt:items>
+                                                    <tnt:NavigationListItem expanded="true" hasExpander="true" text="HOME" select="_onNavigationListItemFirstLevelSelect"/>
+                                                </tnt:items>
+                                            </tnt:NavigationListItem>
+                                        </tnt:items>
+                                    </tnt:NavigationList>
+                                </contentLeft>
+                                <contentMiddle/>
+                                <contentRight/>
+                            </Bar>
+                        </contentLeft>
+                        <contentMiddle/>
+                        <contentRight/>
+                    </Bar>
+                </uxap:navigationBar>
+            </uxap:ObjectPageHeader>
+        </uxap:headerTitle>
+        <uxap:sections>
+            <uxap:ObjectPageSection showTitle="true" title="Section 1" titleUppercase="true" visible="true">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="Sub Section Title" mode="Expanded">
+                        <uxap:blocks>
+                            <Label text="Some random text" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                        </uxap:blocks>
+                        <uxap:moreBlocks/>
+                        <uxap:actions/>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+                <uxap:customAnchorBarButton/>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection showTitle="true" title="Section 2" titleUppercase="true" visible="true">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="Sub Section Title" mode="Expanded">
+                        <uxap:blocks>
+                            <Label text="Some random text" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                        </uxap:blocks>
+                        <uxap:moreBlocks/>
+                        <uxap:actions/>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+                <uxap:customAnchorBarButton/>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection showTitle="true" title="Section 3" titleUppercase="true" visible="true">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="Sub Section Title" mode="Expanded">
+                        <uxap:blocks>
+                            <Label text="Some random text" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                        </uxap:blocks>
+                        <uxap:moreBlocks/>
+                        <uxap:actions/>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+                <uxap:customAnchorBarButton/>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection showTitle="true" title="Section 4" titleUppercase="true" visible="true">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="Sub Section Title" mode="Expanded">
+                        <uxap:blocks>
+                            <Label text="Some random text" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                        </uxap:blocks>
+                        <uxap:moreBlocks/>
+                        <uxap:actions/>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+                <uxap:customAnchorBarButton/>
+            </uxap:ObjectPageSection>
+        </uxap:sections>
+        <uxap:footer>
+            <Bar design="Auto">
+                <contentLeft/>
+                <contentMiddle/>
+                <contentRight>
+                    <Button text="Approve" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="Reject" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="" type="Default" icon="sap-icon://action" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </contentRight>
+            </Bar>
+        </uxap:footer>
+    </uxap:ObjectPageLayout>
+</mvc:View>
